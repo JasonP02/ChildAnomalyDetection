@@ -66,4 +66,3 @@ def objective(trial):
 def tune_hyperparameters(n_trials=100, timeout=600):
     study = optuna.create_study(direction="minimize")
     study.optimize(objective, n_trials=n_trials, timeout=timeout)
-    # Rest of the code remains the same
